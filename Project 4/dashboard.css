@@ -1,0 +1,208 @@
+@charset "utf-8";
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Base                                                 */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  outline: 0;
+  box-shadow: none;
+  box-sizing: border-box;
+  vertical-align: baseline;
+  transition: all .2s ease-in-out;
+}
+
+body {
+  font-family: 'Nunito Sans', Lato, sans-serif;
+  background-color: #eff0f3;
+}
+
+.container {
+  width: 90%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+h1, h2, div, p, a, li {
+  -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Header                                               */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+header {
+    min-width: 100%;
+    background-color: #217c56;
+    overflow: hidden;
+  }
+  
+  .flexbox {
+    display: flex;
+  }
+  
+  .title {
+    width: 40%;
+    height: 56px;
+  }
+  
+  .title h1 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 56px;
+    letter-spacing: .2px;
+    text-transform: uppercase;
+  }
+  
+  nav {
+    text-align: right;
+    width: 60%;
+    height: 56px;
+    font-size: 100%;
+  }
+  
+  nav ul {
+    float: none;
+    list-style: none;
+  }
+  
+  nav ul li {
+    display: inline;
+    line-height: 56px;
+    cursor: default;
+  }
+  
+  nav ul li a {
+    font-size: 17px;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: .2px;
+    text-transform: none;
+    cursor: pointer;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  nav ul li + li {
+    margin-left: 25px;
+  }
+  
+  .search input[type=text] {
+    background: url("magnifier.png") no-repeat 95% center;
+    background-size: 17px 17px;
+    color: #fff;
+  }
+
+  input{
+    float: right;
+    padding: 6px;
+    border: 70;
+    border-radius: 4px;
+    margin-top: 5px;
+    font-size: 17px;
+    height: 46px;
+    width: 350px;
+    background-color: #217c56;
+    color:rgba(0, 0, 0, 0)
+  }
+
+  input:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  input:focus {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  /*input{
+
+    padding: 0 15px;
+    background-color: #3A7531;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    transition: background-color .25 ease-in-out;
+  }*/
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Columns                                              */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+main {
+    margin-top: 160px;
+}
+
+.row {
+    margin-top: 15px;
+    display: flex;
+}
+
+.col {
+    height: 75px;
+    background-color:#fff;
+    box-shadow: 1px 1px 2px #e4e5e8;
+    display: flex;
+}
+
+.three {
+    width: calc(33% - 12.5px);
+}
+
+.col + .col {
+    margin-left: 15px;
+}
+
+.icon-container {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: aqua;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 15px;
+}
+
+.maroon-icon {
+    color: #d7195e;
+    background-color: #d7195e55;
+}
+
+.purple-icon {
+    color: #5941a2;
+    background-color: #5941a255;
+}
+
+.orange-icon {
+    color: #fc9908;
+    background-color: #fc990855;
+}
+
+.green-icon {
+    color: #428744;
+    background-color: #42874455;
+}
+
+.blue-icon {
+    color: #227bc1;
+    background-color: #227bc155;
+}
+
+.red-icon {
+    color: #c22d28;
+    background-color: #c22d2855;
+}
+
+.fas {
+    line-height: 40px !important;
+}
