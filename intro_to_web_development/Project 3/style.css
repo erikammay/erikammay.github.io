@@ -18,7 +18,7 @@ header div {
   .title h1 {
     font-size: 18px;
     font-weight: 600;
-    color: rgb(73, 42, 42);
+    color: rgb(36, 9, 9);
     line-height: 60px;
     letter-spacing: .4px;
     text-transform: uppercase;
@@ -42,7 +42,7 @@ nav ul li {
 
 nav ul li a {
   font-size: 17px;
-  color: rgb(116, 75, 75);
+  color: rgb(94, 25, 25);
   font-weight: 600;
   text-decoration: none;
   letter-spacing: .2px;
