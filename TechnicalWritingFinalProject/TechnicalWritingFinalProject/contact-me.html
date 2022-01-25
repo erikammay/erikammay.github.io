@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login</title>
+    <link rel="shortcut icon" href="assets/img/favicon.png?v=2" type="image/x-icon">
+    <link rel="stylesheet" href="contact-me.css" media="all">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&family=Zen+Antique+Soft&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <main>
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - -->
+        <!-- Header                                            -->
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - -->
+        <header>
+            <div class="container flexbox">
+                <div class="title">
+                    <h1>Erika May</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about_me.html">About Me</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact-me.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="mobile-nav">
+                    <p><i class="fas fa-bars" title="Menu"></i>
+                    <p>
+                </div>
+            </div>
+        </header>
+
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - -->
+        <!-- Form                                              -->
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - -->
+        <h2>Contact Me</h2>
+        
+        <form id="form" method="POST" action="#">
+            <fieldset>
+                <legend>My form</legend>
+                <div class="formLeft">
+                    <p>
+                        <label for="name">Name</label><br>
+                        <input type="text" id="name" placeholder="Your name" required>
+                    </p>
+                    <div class="space1">
+                        <p>
+                            <label for="email">Email</label><br>
+                            <input type="email" id="email" placeholder="my@email.com" required>
+                        </p>
+                    </div>
+                    <div class="space2">
+                        <p>
+                            <label for="phone">Phone</label><br>
+                            <input type="tel" id="phone" placeholder="(123) 456-7890" required>
+                        </p>
+                    </div>
+                </div>
+                <div class="formRight">
+                    <p>
+                        <label for="message">Leave a message</label><br>
+                        <textarea id="message" placeholder="Your message" rows="6" required></textarea>
+                    </p>
+                </div>
+            </fieldset>
+            <br>
+            
+            <br>
+
+            <br>
+
+            <input type="reset" class="reset" value="Clear">
+            <input type="submit" class="submit" value="Send">
+            <!-- <input type="button" class="button" value="Button" onclick="alert('Hello world');"> -->
+        </form>
+
+
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="social">
+                    <div class="nav">
+                        <ul>
+                            <li><a class="twitter" href="#" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                            <li><a class="instagram" href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li><a class="youtube" href="#" title="YouTube"><i class="fab fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

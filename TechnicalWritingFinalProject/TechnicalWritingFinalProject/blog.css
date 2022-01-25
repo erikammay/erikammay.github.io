@@ -1,0 +1,59 @@
+@import "base.css";
+
+.article-p {
+    margin-top: 30px;
+  }
+
+.article-img {
+    margin-top: 30px;
+    margin-left: 37%;
+}
+
+.cap {
+  color: rgb(75, 75, 75);
+  text-align: center;
+  font-size: 12px;
+}
+
+
+h2{
+  text-align: center;
+}
+
+.space {
+    height: 120px;
+  }
+  
+  p {
+    margin-top: 10px;
+    line-height: 1.5;
+    font-size: 17px;
+  }
+  
+  p a {
+    text-decoration: none;
+    font-size: 17px;
+    color: #0075eb;
+  }
+  
+  p a:hover {
+    text-decoration: underline;
+  }
+
+  @media screen and (min-width: 1024px) {
+    .container, .row-container {
+      max-width: 920px;
+    }
+  }
+img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 450px;
+    height: 150px;
+    /* border-right: 10px; */
+  }
+  
+  img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  }

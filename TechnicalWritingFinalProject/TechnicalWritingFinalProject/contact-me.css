@@ -1,0 +1,140 @@
+@import "base.css";
+
+h2{
+  text-align: center;
+  color: rgb(104, 104, 104);
+  margin-top: 3%;
+}
+
+.formLeft{
+  /* align-items: left; */
+  margin-left: 26%;
+  width: 300px;
+  margin-top: 35px;
+}
+
+.formRight{
+  margin-left: 50%;
+  width: 350px;
+  margin-top: -174px;
+}
+
+.space1 {
+  margin-top: 5px;
+}
+
+.space2 {
+  margin-top: 5px;
+}
+
+.form {
+  text-align: center;
+  /* margin-top: 60px; */
+  /* margin-left */
+}
+
+.form h2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.form p {
+  margin-top: 4px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+form {
+  /* margin-right: 30%;
+  margin-left: 30%; */
+  /* margin-top: 25px; */
+  /* width: 600px; */
+  font-size: 0;
+}
+
+input {
+  width: 100%;
+  height: 50px;
+  padding: 0 15px;
+  background-color: #fff;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  transition: border-color .25s ease-in-out;
+}
+
+form input + input {
+  margin-top: 15px;
+}
+
+input:focus, textarea:focus {
+  border: 1px solid #838383;
+}
+
+textarea{
+ margin-top: 15px;
+ width: 100%;
+ min-width: 100%;
+ height: 160px;
+ padding: 15px;
+ font-size: 16px;
+ font-weight: 400;
+ background-color: #fff;
+ border: 1px solid #bbb;
+ border-radius: 4px;
+ resize: none;
+ overflow: auto;
+ transition: border-color .25s ease-in-out;
+}
+
+input[type="text"]:valid, input[type="email"]:valid {
+  background: #fff url(../img/valid.png) no-repeat 97% center;
+  background-size: 13px 13px;
+}
+
+textarea:valid {
+  background: #fff url(../img/valid.png) no-repeat 97% center;
+  background-size: 13px 13px;
+}
+
+.buttons {
+  text-align: right;
+}
+
+input[type="reset"] {
+  width: 295px;
+  height: 46px;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #9b9b9b;
+  font-weight: 600;
+  letter-spacing: .2px;
+  color: #9fa0a0;
+  cursor: pointer;
+  margin-left: 26%;
+}
+
+input[type="reset"]:hover {
+  border: 1px solid #9b9b9b;
+  color: #9b9b9b;
+}
+
+input[type="submit"] {
+  margin-left: 15px;
+  width: 345px;
+  height: 46px;
+  text-align: center;
+  background-color: #9b9b9b;
+  border: 1px solid #9b9b9b;
+  font-weight: 600;
+  letter-spacing: .2px;
+  color: #fff;
+  cursor: pointer;
+  /* margin-left: 50%; */
+}
+
+input[type="submit"]:hover {
+  background-color:  #8e9192;
+}
