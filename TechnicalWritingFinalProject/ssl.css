@@ -1,0 +1,49 @@
+@import "base.css";
+
+.article-p {
+    margin-top: 30px;
+  }
+
+.article-img {
+    margin-top: 30px;
+    margin-left: 37%;
+    width: 50%;
+    height: 50%;
+}
+
+.cap {
+  color: rgb(75, 75, 75);
+  text-align: center;
+  font-size: 12px;
+}
+
+
+h2{
+  text-align: center;
+}
+
+.space {
+    height: 120px;
+  }
+  
+  p {
+    margin-top: 10px;
+    line-height: 1.5;
+    font-size: 17px;
+  }
+  
+  p a {
+    text-decoration: none;
+    font-size: 17px;
+    color: #0075eb;
+  }
+  
+  p a:hover {
+    text-decoration: underline;
+  }
+
+  @media screen and (min-width: 1024px) {
+    .container, .row-container {
+      max-width: 920px;
+    }
+  }
