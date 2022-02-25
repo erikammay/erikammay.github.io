@@ -93,7 +93,7 @@ function checkWinner() {
 }
 
 function gameOverScreen(winnerText) {
-  let text = "Draw!";
+  let text = "Tied";
   if (winnerText != null) {
     text = `Winner is ${winnerText}!`;
   }
