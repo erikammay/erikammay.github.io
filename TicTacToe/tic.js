@@ -12,16 +12,33 @@ const gameOverArea = document.getElementById("game-over-area");
 const gameOverText = document.getElementById("game-over-text");
 const playAgain = document.getElementById("play-again");
 playAgain.addEventListener("click", startNewGame);
+const startBtn = document.getElementById("start-btn");
+const xWinText = document.getElementById("x-wins");
+const oWinText = document.getElementById("y-wins");
+
+let flag = true;
+
+let xWins = 0;
+let oWins = 0;
 
 //Sounds
-const gameOverSound = new Audio("defeat.mp3");
 const clickSound = new Audio("click.mp3");
+const backgroundMusic = new Audio("background.mp3");
 // const backgroundAudio = document.getElementById("background");
 // backgroundAudio.src = "background.mp3";
+
+startBtn.addEventListener('click', () => {
+    flag = false;
+    startBtn.style.display = "none";
+    setHoverText();
+    backgroundMusic.play();
+});
 
 tiles.forEach((tile) => tile.addEventListener("click", tileClick));
 
 function setHoverText() {
+    if(flag)
+        return;
   //remove all hover text
   tiles.forEach((tile) => {
     tile.classList.remove("x-hover");
@@ -40,6 +57,8 @@ function setHoverText() {
 setHoverText();
 
 function tileClick(event) {
+    if(flag)
+    return;
   if (gameOverArea.classList.contains("visible")) {
     return;
   }
@@ -93,14 +112,19 @@ function checkWinner() {
 }
 
 function gameOverScreen(winnerText) {
-  let text = "Tied";
+  let text = "Draw!";
   if (winnerText != null) {
     text = `Winner is ${winnerText}!`;
+    if(winnerText === "X")
+        xWins += 1;
+    else
+        oWins += 1;
   }
 
+  xWinText.innerText = `X has ${xWins} win(s)`;
+  oWinText.innerText = `O has ${oWins} win(s)`;
   gameOverArea.className = "visible";
   gameOverText.innerText = text;
-//   gameOverSound.play();
 }
 
 function startNewGame() {
