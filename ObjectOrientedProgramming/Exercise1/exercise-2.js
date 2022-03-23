@@ -27,7 +27,7 @@ console.log(deepCopyObject);
 console.log("\n");
 
 shallowCopyObject.name = "Erika"
-deepCopyObject.name = "Erika"
+deepCopyObject.name = "Erik"
 
 console.log("Property Values After Name Changes");
 console.log(originalObject);
