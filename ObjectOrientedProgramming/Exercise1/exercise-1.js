@@ -16,14 +16,14 @@ employee.phone = "(555) 555-5555";
 
 const props = Object.getOwnPropertyNames(employee);
 
-// 1.b Number of properties
+
 
 var properties = Object.getOwnPropertyNames(employee);
 console.log(properties.length);
 
 console.log("\n");
 
-// 1.b Type of all properties
+
 
 for (let propName of props) {
     console.log(typeof employee[propName]);
@@ -31,7 +31,7 @@ for (let propName of props) {
 
 console.log("\n");
 
-// 1.b The object contains the property 'dateOfBirth' (true/false)
+
 
 if (Object.getOwnPropertyNames(employee).includes("dateOfBirth")) {
     console.log("The Employee has a Record of Date of Birth");
@@ -41,7 +41,7 @@ if (Object.getOwnPropertyNames(employee).includes("dateOfBirth")) {
 
 console.log("\n");
 
-// 1.b All properties are enumberable (true/false)
+
 
 let nonEnumerable = [];
 
@@ -54,7 +54,7 @@ if (nonEnumerable.length) {
 
 console.log("\n");
 
-// 1.b The object is frozen (true/false)
+
 
 if (Object.isFrozen(employee)) {
     console.log("Object is Frozen");
